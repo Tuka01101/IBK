@@ -1,0 +1,457 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: White;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+	height: 100%;
+}
+
+td
+{
+    vertical-align:top;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+    text-align: left;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+.roundedBorder
+{
+	-moz-border-radius: 15px ;
+	border: 1px solid #125AC9;
+	padding:5px;
+	font-family:Calibri;
+}
+
+.cabeceralogin {
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border: 1px solid #05be6a;
+    background-color: #05be6a;
+    background-image: url(../Images/skin.png);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    padding: 5px;
+    font-family: Calibri;
+    font-size: 14pt;
+    color: white;
+}
+
+.cuerpologin
+{
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    /*border: 1px solid #fbc804;*/
+    background-color:#F3F3F3;
+    background-image:url(../Images/skin.png);
+    background-repeat:repeat-x;
+    background-position:left bottom;
+}
+
+.cabecera {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #fbc804;
+    background-color: #fbc804;
+    background-image: url(../Images/skin.png);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    padding: 5px;
+    font-family: Calibri;
+    font-size: 14pt;
+    color: black;
+}
+
+#cabeceraOver:hover
+{
+    background-color:#FFB01C;
+}
+
+.cuerpo
+{
+   -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #fbc804;
+    background-color:#F3F3F3;
+    background-image:url(../Images/skin.png);
+    background-repeat:repeat-x;
+    background-position:left bottom;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    /*font-variant: none;*/
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+/*.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}*/
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    background-image:url('../Images/repeatxy_9732598.gif');
+    background-repeat:repeat;
+    height:auto;
+    position:relative;
+    bottom:0;
+}
+
+.header
+{
+    background: White url('../Images/fondoheader2.png') no-repeat right top padding-box;
+    background-color:white;
+    width: 100%;
+    Height:100%;
+    background-size:125%;
+    position:relative;
+}
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: Black;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+.header img
+{
+    margin:10px 0px 10px 20px;
+    float:left;
+}
+.header table
+{
+    background-color:/*#1F2E58*/White;
+    float:right;
+    right:0;
+    top:0;
+}
+
+.main {
+    background-image: url('../Images/fondobody.png');
+    background-repeat: repeat;
+    -moz-box-shadow: 0 5px 5px rgba(170, 170, 170, 0.75);
+    -webkit-box-shadow: 0 5px 5px rgba(170, 170, 170, 0.75);
+    box-shadow: 0 5px 5px rgba(170, 170, 170, 0.75);
+    width: 90%;
+    margin: 0px auto 0px auto;
+    padding: 12px;
+    min-height: 500px;
+    z-index: 1;
+    /*position: relative;*/
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    position:relative;
+    
+    padding: 8px 0px 8px 0px;
+   /*margin: 0px auto;*/
+    width:100%;
+    bottom:0;
+    left:0;
+    text-align: center;
+    line-height: normal;
+    vertical-align:middle;
+   /* background-image:url(../Images/tapiz_2.png);
+    background-repeat:repeat;*/
+    background-color: white;
+    border-top: 1px solid #dde4ec;
+}
+.footer p
+{
+    font:calibri;
+    font-size:8pt;
+    color:#65768D;
+}
+
+.calloutDown { /* es el borde del triangulito hacia abajo */
+  border-top: 10px solid #fbc804;
+  border-left: 10px dotted transparent;
+  border-right: 10px dotted transparent;
+  left: 0px; top: 0px; /* lo posicionamos */
+  height: 0; width: 0; /* no tendrá dimensiones */
+  margin-left: 20px; /* lo separamos del borde izquierdo */
+  z-index: 11;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+div.backmenu {
+    position: relative;
+    background-color: #dadada;
+    -moz-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    -webkit-box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+    ​width:100%;
+    clear: both;
+    top: 0px;
+    left: 0px;
+}
+
+div.hideSkiplink
+{
+    width: 72%;
+    margin: 0px auto 0px auto;
+}
+
+div.menu {
+    padding: 0px 4px 0px 4px;
+    background-color: #dadada;
+}
+
+div.menu ul
+{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+    /*width: auto;*/
+}
+
+    div.menu ul li a, div.menu ul li a:visited {
+        background-color: #05be6a;
+        /* border: 0px 1px 0px 1px #4e667d solid;*/
+        color: white;
+        display: block;
+        line-height: 1.35em;
+        padding: 8px 20px;
+        text-decoration: none;
+        margin: 0 0 0 -1px;
+        /*   white-space: nowrap;*/
+        border-right: 1px;
+        border-left: 1px;
+        border-bottom: 0px;
+        border-top: 0px;
+        border-color: #099957;
+        border-style: solid;
+        background-image: url(../Images/skin.png);
+        background-repeat: repeat-x;
+    }
+
+        div.menu ul li a:hover {
+            background-color: #575756;
+            text-decoration: none;
+            background-image: url(../Images/skin.png);
+            background-repeat: repeat-x;
+        }
+
+div.menu ul li a:active
+{
+   /* background-color: #465c71;*/
+    color: #cfdbe6;
+    text-decoration: none;
+    
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+/*fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+/*.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color: white;
+}
+
+.loginDisplay a:hover
+{
+    color: white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}*/
+
+
+
+.mGrid {   
+    background-color: #fff;   
+    margin: 0 auto 0 auto;    
+    border: solid 1px #525252;   
+    border-collapse:collapse;   
+}  
+.mGrid td {   
+    padding: 2px;   
+    border: solid 1px #c1c1c1;   
+    color: #717171;   
+}  
+.mGrid th {   
+    padding: 4px 2px;   
+    color: #fff;   
+    background: #424242 url('../Images/skin.png') repeat-x top;   
+    border-left: solid 1px #525252;   
+    font-size: 0.9em;   
+}  
+    
+.gridNormalCSS
+{
+    background-color: White;
+}
+    .gridNormalCSS:hover, .gridAlternateCSS:hover {
+        background-color: #fbc804;
+    } 
+.gridAlternateCSS
+{
+    background-color: #F3F3F3;
+}
+
